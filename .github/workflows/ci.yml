@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches:
+- '*'　#この例は、どのブランチがpushされた場合でも、workflowをトリガーする設定である。
+jobs:
+  build:
+    runs-on: [ubuntu-latest] #GitHub-hosted runnerのuｂuntu OSでビルド&テストする例の場合
+    steps:
+    - uses: actions/checkout@v2 # CI環境にリモートリポジトリのコードをチェックアウトする。
+    - name: Set up Go
+      uses: actions/setup-go@v2 # CI環境にGoの環境をセットアップする。
+      with:
+        go-version: 1.16
+    - name: Build
+      run: go build -v ./...
+    - name: Test
+      run: go test -v ./...
+

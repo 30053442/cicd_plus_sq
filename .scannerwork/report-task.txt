@@ -1,0 +1,6 @@
+projectKey=cicd_plus_sq
+serverUrl=http://10.14.3.121:9007
+serverVersion=8.9.1.44547
+dashboardUrl=http://10.14.3.121:9007/dashboard?id=cicd_plus_sq
+ceTaskId=AYBO7fcoqlTnaQPDLKtk
+ceTaskUrl=http://10.14.3.121:9007/api/ce/task?id=AYBO7fcoqlTnaQPDLKtk

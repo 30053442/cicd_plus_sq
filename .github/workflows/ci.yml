@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-- '*'　#この例は、どのブランチがpushされた場合でも、workflowをトリガーする設定である。
+    - '*'
 jobs:
   build:
     runs-on: [ubuntu-latest] #GitHub-hosted runnerのuｂuntu OSでビルド&テストする例の場合
